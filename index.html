@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lídart Insights | Liderança Aumentada</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Plataforma de conteúdo, curadoria de ferramentas de IA, cases de sucesso, radar de novidades e ferramentas interativas para liderança aumentada.">
+  <meta name="author" content="Lídart">
+  
+  <!-- Google Fonts: DM Sans & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-mode">
+  <div class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="logo-lid">Líd</span><span class="logo-art">art</span>
+        </div>
+        <div class="subtitle">LIDERANÇA AUMENTADA</div>
+      </div>
+      
+      <nav class="sidebar-menu">
+        <button class="nav-item active" data-view="dashboard" id="btn-dashboard">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Dashboard</span>
+        </button>
+        <button class="nav-item" data-view="aimap" id="btn-aimap">
+          <i data-lucide="map"></i>
+          <span>Mapa de IAs</span>
+        </button>
+        <button class="nav-item" data-view="methodology" id="btn-methodology">
+          <i data-lucide="compass"></i>
+          <span>As 8 Coordenadas</span>
+        </button>
+        <button class="nav-item" data-view="tools" id="btn-tools">
+          <i data-lucide="wrench"></i>
+          <span>Ferramentas</span>
+        </button>
+        <button class="nav-item" data-view="insights" id="btn-insights">
+          <i data-lucide="book-open"></i>
+          <span>Insights & Conteúdo</span>
+        </button>
+        <button class="nav-item" data-view="cases" id="btn-cases">
+          <i data-lucide="briefcase"></i>
+          <span>Cases de Sucesso</span>
+        </button>
+        <button class="nav-item" data-view="radar" id="btn-radar">
+          <i data-lucide="rss"></i>
+          <span>Radar de Novidades</span>
+        </button>
+        <button class="nav-item highlight-btn" data-view="assessment" id="btn-assessment">
+          <i data-lucide="award"></i>
+          <span>Diagnóstico de Maturidade</span>
+        </button>
+        <button class="nav-item highlight-btn-alt" data-view="roi" id="btn-roi">
+          <i data-lucide="calculator"></i>
+          <span>Calculadora de ROI</span>
+        </button>
+        <button class="nav-item" data-view="admin" id="btn-admin" style="margin-top: 1rem; border-top: 1px solid var(--border-color); padding-top: 1rem; border-radius: 0;">
+          <i data-lucide="settings"></i>
+          <span>Gerenciar Conteúdo</span>
+        </button>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+          <span class="theme-text">Modo Claro</span>
+        </button>
+        <div class="consulting-card">
+          <h4>Precisa de ajuda?</h4>
+          <p>Acelere sua empresa com nossa assessoria personalizada.</p>
+          <a href="https://lidart.com.br" target="_blank" class="cta-consulting">Falar com Consultor</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <div class="logo">
+        <span class="logo-lid">Líd</span><span class="logo-art">art</span>
+      </div>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Top Action Bar -->
+      <header class="top-bar">
+        <div class="welcome-msg">
+          <h1 id="view-title">Dashboard</h1>
+          <p id="view-description">Bem-vindo ao portal de inteligência em IA da Lídart.</p>
+        </div>
+        <div class="top-actions">
+          <div class="quick-status">
+            <span class="status-indicator"></span>
+            <span class="status-text">Radar de IA: Atualizado hoje</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- View Container (Dynamic Content Injection) -->
+      <div class="view-container" id="view-container">
+        <!-- Content will be injected here by app.js -->
+      </div>
+      
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -278,6 +278,30 @@ const lidartData = {
       tag: "2º Automação de Fluxo",
       useCase: "Integração segura e local de dados confidenciais de clientes sem envio a servidores terceiros de automação.",
       link: "https://n8n.io"
+    },
+    {
+      id: "antigravity",
+      name: "Antigravity",
+      provider: "Google DeepMind",
+      category: "development",
+      description: "Agente avançado de inteligência artificial do Google DeepMind para engenharia de software autônoma. Planeja, programa, depura e otimiza projetos complexos de ponta a ponta com extrema precisão de raciocínio.",
+      rating: 5.0,
+      price: "Privado",
+      tag: "1º Engenharia Autônoma",
+      useCase: "Desenvolvimento autônomo de sistemas, refatoração de bases de código complexas e automação de fluxos de engenharia de software de ponta a ponta.",
+      link: "https://deepmind.google"
+    },
+    {
+      id: "railway",
+      name: "Railway",
+      provider: "Railway",
+      category: "development",
+      description: "Plataforma de infraestrutura e hospedagem na nuvem que simplifica a implantação, banco de dados e monitoramento de aplicações. Permite colocar sistemas em produção a partir do repositório em poucos cliques.",
+      rating: 4.9,
+      price: "Freemium",
+      tag: "1º Infraestrutura & Deploy",
+      useCase: "Hospedagem ágil, segura e escalável de microsserviços, bancos de dados e APIs para projetos de IA e web.",
+      link: "https://railway.app"
     }
   ],
 
